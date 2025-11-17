@@ -1,0 +1,41 @@
+waf-detection-model/
+├── data/
+│   ├── raw/
+│   │   ├── normal_requests.txt
+│   │   ├── malicious_requests.txt
+│   │   └── labeled_dataset.csv
+│   ├── processed/
+│   │   ├── train.csv
+│   │   ├── test.csv
+│   │   └── validation.csv
+│   └── external/
+│       ├── sql_injection_samples.txt
+│       └── xss_samples.txt
+├── features/
+│   ├── feature_extractor.py
+│   ├── lexical_features.py
+│   └── semantic_features.py
+├── models/
+│   ├── model_trainer.py
+│   ├── ensemble_model.py
+│   └── saved_models/
+│       ├── xgb_model.pkl
+│       ├── rf_model.pkl
+│       └── ensemble_model.pkl
+├── utils/
+│   ├── data_loader.py
+│   ├── preprocessor.py
+│   ├── evaluator.py
+│   └── constants.py
+├── config/
+│   ├── model_config.yaml
+│   └── feature_config.yaml
+├── tests/
+│   ├── test_features.py
+│   └── test_models.py
+├── notebooks/
+│   ├── EDA.ipynb
+│   └── feature_analysis.ipynb
+├── requirements.txt
+├── train.py
+└── predict.py
